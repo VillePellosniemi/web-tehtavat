@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+  'use strict';
+
+  const saldo = prompt('Anna tilin saldo:');
+  const korkoprosentti = prompt('Anna korkoprosentti:');
+
+  const lisays = (korkoprosentti/100)*saldo;
+  const vuodenJalkeen = (+saldo+(+lisays));
+
+  function v(vuodenJalkeen) {
+    return Number.parseFloat(vuodenJalkeen).toFixed(2);
+  }
+  function l(lisays) {
+    return Number.parseFloat(lisays).toFixed(2);
+  }
+
+  console.log('Korkoa on kertynyt', l(lisays) , 'euroa ja tilisi saldo on nyt', v(vuodenJalkeen), 'euroa.');
+
+
+</script>
+</body>
+</html>

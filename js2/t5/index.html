@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+
+  let kysymys = window.confirm('Lasketaanko neliöjuuri?');
+
+  switch (kysymys) {
+    case true:
+      let juuri = prompt('Anna luku');
+      if (juuri<0) {
+        console.log('Negatiivisen luvun neliöjuuri ei ole määritelty.')
+      } else {
+        console.log('Neliöjuuri on:',Math.sqrt(juuri));
+      }
+      break;
+    case false:
+      console.log('Neliöjuurta ei lasketa.');
+      break;
+  }
+
+</script>
+</body>
+</html>
