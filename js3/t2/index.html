@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+
+  let vahvistus = window.confirm('Lasketaanko neliöjuuri?');
+  let luku;
+
+  if (vahvistus=true) {
+    do {
+      luku = prompt('Anna luku:');
+      console.log('Neliöjuuri luvustasi on:', Math.sqrt(luku));
+    } while (luku >= 0);
+  }
+
+</script>
+</body>
+</html>

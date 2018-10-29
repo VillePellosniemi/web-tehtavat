@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+
+  let maara = prompt('Anna osallistujien määrä:');
+  let lista = [];
+
+  for (maara; maara>0; maara--) {
+    let nimi = prompt('Anna nimi:');
+    lista.push(nimi);
+  }
+
+  document.write('<ol><li>'+ lista +'</li></ol>');
+
+</script>
+</body>
+</html>

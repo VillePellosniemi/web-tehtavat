@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+
+  let numerot = [];
+  let luku = prompt('Anna luku:');
+
+  while (luku > 0) {
+    numerot.push(luku);
+    luku--;
+  }
+
+  console.log(numerot.reduce( (a,b) => a * b ));
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+
+  let lukumaara = prompt('Anna arpakuutioiden lukumäärä:');
+  let lista = [];
+
+  for (lukumaara; lukumaara>0; lukumaara--) {
+    let luku = Math.floor(Math.random() * 6) + 1;
+    lista.push(luku);
+  }
+
+  console.log('Sait heitollasi luvut:', lista);
+  console.log('Slmälukujen summa on:', lista.reduce( (a,b) => a + b ));
+
+
+
+</script>
+</body>
+</html>
