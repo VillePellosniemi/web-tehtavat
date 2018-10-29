@@ -5,22 +5,25 @@
     <title>JavaScript-kokeilu</title>
 </head>
 <body>
-<div id="orderedList"></div>
+<div id="unorderedList"></div>
 <script>
 
   'use strict';
 
-  let maara = prompt('Anna osallistujien määrä:');
-  let lista = [];
+  let nimet = [];
 
-  for (maara; maara>0; maara--) {
-    let nimi = prompt('Anna nimi:');
-    lista.push(nimi);
+  let i;
+
+  for (i=1; i<=6; i++) {
+    let nimi = prompt('Anna koiran nimi:');
+    nimet.push(nimi);
   }
 
-  function teeLista(array) {
 
-    let list = document.createElement('ol');
+  function teeLista(array) {
+    nimet.sort();
+    nimet.reverse();
+    let list = document.createElement('ul');
 
     for (let i = 0; i < array.length; i++) {
       let item = document.createElement('li');
@@ -30,7 +33,7 @@
     return list;
   }
 
-  document.getElementById('orderedList').appendChild(teeLista(lista));
+  document.getElementById('unorderedList').appendChild(teeLista(nimet));
 
 </script>
 </body>

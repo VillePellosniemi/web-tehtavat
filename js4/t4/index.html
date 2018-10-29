@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+
+  let luvut = [];
+  let luku;
+
+  let alkuLuku = prompt('Anna luku');
+
+  if (alkuLuku > 0) {
+    luvut.push(alkuLuku);
+    do {
+      luku = prompt('Anna luku:');
+      luvut.push(luku);
+    } while (luku > 0);
+  } else {
+    console.log('Annoit negatiivisen luvun');
+  }
+
+  console.log(luvut.sort((a, b) => b - a));
+
+
+
+
+</script>
+</body>
+</html>
