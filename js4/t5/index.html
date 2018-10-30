@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<div id="orderedList"></div>
+<script>
+
+  'use strict';
+
+  let luvut = [];
+  let luku;
+
+  let alkuluku = prompt('Anna luku väliltä 1-1000');
+
+  if (alkuluku >= 0 && alkuluku <= 1000) {
+    luvut.push(alkuluku);
+    do {
+      luku = prompt('Anna luku väliltä 1-1000');
+      luvut.push(luku);
+    } while (luvut.includes(luku));
+  } else {
+    console.log('Tuomas ei osaa');
+  }
+
+</script>
+</body>
+</html>
