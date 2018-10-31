@@ -9,6 +9,9 @@ const kuvat = [
 let listanpituus =  kuvat.length;
 
 for (let i=0; i<listanpituus; i++) {
-  let list = document.getElementById('kuva').src = kuvat;
-  let entry = document.createElement('img');
+  let list = document.getElementById('kuva');
+  let entry = document.createElement('li');
+  let list2 = document.getElementsByTagName('li');
+  let entry2 = document.createElement('img');
+  document.getElementsByTagName('img').src = kuvat[0];
 }

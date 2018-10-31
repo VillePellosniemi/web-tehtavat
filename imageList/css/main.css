@@ -130,7 +130,10 @@ figcaption {
     position: absolute;
     top: 0;
     width: 200px;
+    box-sizing: border-box;
+    padding-left: 10px;
 }
+
 
 
 
@@ -143,6 +146,7 @@ figcaption {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+/*main,header, aside*/
 
 @media only screen and (min-width: 35em) {
     body {
