@@ -6,12 +6,10 @@ const kuvat = [
   'http://placekitten.com/331/240',
 ];
 
-let listanpituus =  kuvat.length;
-
-for (let i=0; i<listanpituus; i++) {
-  let list = document.getElementById('kuva');
-  let entry = document.createElement('li');
-  let list2 = document.getElementsByTagName('li');
-  let entry2 = document.createElement('img');
-  document.getElementsByTagName('img').src = kuvat[0];
+let i;
+for (i=0; i<kuvat.length; i++) {
+  let ul = document.getElementById('kuva');
+  let kuva = document.createElement('img');
+  let k = document.getElementsByTagName('img');
+  k.innerHTML = kuvat[i];
 }
