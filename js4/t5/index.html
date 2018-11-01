@@ -5,25 +5,25 @@
     <title>JavaScript-kokeilu</title>
 </head>
 <body>
-<div id="orderedList"></div>
 <script>
 
   'use strict';
 
-  let luvut = [];
-  let luku;
+  let luku, i, j;
+  let totuus = true;
+  let lista = [];
 
-  let alkuluku = prompt('Anna luku väliltä 1-1000');
+  for (i=0; totuus == true; i++){
+    luku = prompt("Anna luku 1 ja 1000 väliltä");
+    for (j=0; j<i; j++){
+      if(luku == lista[j]){
+        totuus = false;
+        console.log('Annoit jo saman luvun');
+      }
+    }
+    lista[i] = luku;
+  };
 
-  if (alkuluku >= 0 && alkuluku <= 1000) {
-    luvut.push(alkuluku);
-    do {
-      luku = prompt('Anna luku väliltä 1-1000');
-      luvut.push(luku);
-    } while (luvut.includes(luku));
-  } else {
-    console.log('Tuomas ei osaa');
-  }
 
 </script>
 </body>
