@@ -10,6 +10,7 @@ let listanpituus = kuvat.length;
 let i;
 
 for (i=0; i<listanpituus; i++) {
-  let lista = document.getElementById('kuva').innerHTML = '<li><img src = "http://placekitten.com/321/240"></li>';
-
+  document.getElementById('kuva').innerHTML = '<li></li>';
+  let i = document.createElement('img');
+  i.src = kuvat[i];
 }
