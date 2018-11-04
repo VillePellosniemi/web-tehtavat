@@ -1,13 +1,11 @@
-document.querySelector('img').addEventListener('mouseover', mouseEnter);
-document.querySelector('img').addEventListener('mouseleave', mouseLeave);
-
-function mouseEnter () {
-  document.querySelector('img').style.visibility = "visible";
-  document.querySelector('p').style.visibility = "hidden";
+const kuva = document.querySelector("img");
+const teksti = document.querySelector("p");
+function hover() {
+  teksti.setAttribute("class", "nayta");
 }
-
-function mouseLeave () {
-  document.querySelector('img').style.visibility = "hidden";
-  document.querySelector('p').style.visibility = "visible";
+function leave(){
+  teksti.setAttribute("class", "piilota");
 }
+kuva.addEventListener("mouseenter", hover);
+kuva.addEventListener("mouseleave", leave);
 

@@ -6,7 +6,7 @@ function Kellonaika () {
   minuutit = checkTime(minuutit);
   sekunnit = checkTime(sekunnit);
   document.getElementById('kello').innerHTML = tunnit + ':' + minuutit + ':' + sekunnit;
-  let t = setInterval(Kellonaika, 500);
+  let t = setInterval(Kellonaika, 1000);
 }
 
 function checkTime (i) {
