@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+
+  function liita (array) {
+    let v = array[0].trim();
+    let s = array[1].trim();
+    let y = array[2].trim();
+    let tulos = v+s+y;
+    return tulos;
+  }
+
+  let taulukko = [];
+  let i;
+
+  for (i=1; i<=3; i++) {
+    let nimi = prompt('Anna nimi:');
+    taulukko.push(nimi);
+  }
+  console.log(liita(taulukko));
+
+</script>
+</body>
+</html>

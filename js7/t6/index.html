@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+
+  let taulukko = [];
+
+  for (let i=0; i<=3; i++) {
+    let luku = prompt('Anna luku:');
+    taulukko.push(luku);
+  }
+
+  function vastaluvuksi () {
+    let luvut = [];
+    for (let i=0; i<=taulukko.length; i++) {
+      let tulos = (taulukko[0]);
+      luvut.push(tulos);
+      taulukko[i]++;
+    }
+    return luvut;
+  }
+
+  console.log(vastaluvuksi());
+
+</script>
+</body>
+</html>

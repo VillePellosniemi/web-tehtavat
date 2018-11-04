@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+
+  function muunnos (bensamaara) {
+    let muunnos = (bensamaara/3.785);
+    return muunnos;
+  }
+
+  let bensamaara = prompt('Anna bensamäärä gallonoina:');
+  console.log('Määrä litroina on:', muunnos(bensamaara).toFixed(2), 'litraa');
+
+</script>
+</body>
+</html>
