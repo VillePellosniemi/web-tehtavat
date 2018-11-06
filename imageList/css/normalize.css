@@ -178,7 +178,7 @@ sub {
    ========================================================================== */
 
 /**
- * Remove border when inside `a` element in IE 8/9/10.
+ * Remove border when inside `js7` element in IE 8/9/10.
  */
 
 img {
@@ -239,7 +239,7 @@ samp {
 
 /**
  * Known limitation: by default, Chrome and Safari on OS X allow very limited
- * styling of `select`, unless a `border` property is set.
+ * styling of `select`, unless js7 `border` property is set.
  */
 
 /**
@@ -401,7 +401,7 @@ textarea {
 }
 
 /**
- * Don't inherit the `font-weight` (applied by a rule above).
+ * Don't inherit the `font-weight` (applied by js7 rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
 
