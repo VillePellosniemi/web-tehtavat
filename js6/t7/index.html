@@ -11,20 +11,23 @@
 
   let taulukko = [];
 
-  for (let i=0; i<=3; i++) {
+  for (let i=0; i<3; i++) {
     let luku = prompt('Anna luku:');
     taulukko.push(luku);
   }
 
-  function vastaluvuksi () {
+  function parilliset () {
+  let luvut = [];
     for (let i=0; i<taulukko.length; i++) {
-      let tulos = -(taulukko[i]);
-      console.log(tulos);
+      if (taulukko[i] === 0 || !!(taulukko[i] && !(taulukko[i]%2))) {
+        luvut.push(taulukko[i]);
+      }
       taulukko[i]++;
     }
+    console.log(luvut);
   }
 
-  vastaluvuksi();
+  parilliset();
 
 </script>
 </body>
