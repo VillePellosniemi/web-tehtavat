@@ -11,13 +11,8 @@ function Haku () {
   .then(function(vastaus) {
     return vastaus.json();
   }).then(function(json){
-    Tulos(json);
+    console.log(json);
   }).catch(function(error){
     console.log(error);
   });
-}
-
-function Tulos () {
-  const ul = document.getElementById('hakutulos');
-
 }
