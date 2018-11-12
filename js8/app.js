@@ -32,7 +32,6 @@ function Tietoa (infoa) {
     let link = document.createElement('a');
     let link2 = document.createTextNode(linkki);
 
-
     header.setAttribute('class', 'nimi');
     tulostus.appendChild(header);
     let text = document.createTextNode(nimi);

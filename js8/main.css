@@ -38,8 +38,9 @@ body {
 
 #hakutulokset {
     text-align: center;
-    width: 25%;
+    width: 60%;
     margin: 0 auto;
+    background-color: #baabcf;
 }
 
 .linkki {
