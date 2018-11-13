@@ -41,8 +41,16 @@
         console.log(y[i]);
       }
     }
-
     teht3();
+
+    let tag_name = document.getElementsByTagName("li");
+    for (let i=0; i<tag_name.length; i++){
+      console.log(tag_name[i].innerHTML);
+      if(tag_name[i].innerHTML == "Pear"){
+        tag_name[i].style.backgroundColor = "lightgreen";
+      }
+    }
+
 
 
 
