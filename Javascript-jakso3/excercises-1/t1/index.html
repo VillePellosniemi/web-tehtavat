@@ -22,7 +22,11 @@
   function Haku () {
     const weight = document.getElementById('weight').value;
     const height = document.getElementById('height').value;
-    console.log('Your BMI is: ', (weight%height%height));
+    if (weight && height > 0) {
+      document.write('Your BMI is: ', (weight%height%height));
+    } else {
+      document.write('Undefined');
+    }
   }
 
 </script>

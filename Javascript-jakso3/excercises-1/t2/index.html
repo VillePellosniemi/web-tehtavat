@@ -13,11 +13,10 @@
   const b = prompt('Numerator:');
   const a = prompt('Denominator:');
 
-  const gcd = function(a, b) {
+  const gcd = function() {
     if ( ! b) {
       return a;
     }
-
     return gcd(b, a % b);
   };
 
