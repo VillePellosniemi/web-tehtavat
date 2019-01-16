@@ -1,5 +1,44 @@
-body {
-    background-color: lightblue;
+html {
+    background: linear-gradient(to bottom, #007ced 1%,#cce7ff 100%);
+    height: 100%;
+}
+
+#mountain1 {
+    width: 70%;
+    height: 425px;
+    position: absolute;
+    background-color: green;
+    left: 0;
+    bottom: 0;
+    border-top-right-radius: 80%;
+    z-index: -1;
+}
+
+#mountain2 {
+    width: 70%;
+    height: 425px;
+    position: absolute;
+    background-color: #00b30b;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 100%;
+    z-index: -1;
+}
+
+#header {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 5em;
+    margin: 10px 0 0 30px;
+}
+
+.textbox {
+    height: 25%;
+    width: 25%;
+    left: 50px;
+    bottom: 50px;
+    position: absolute;
+    border: 2px solid darkslategrey;
+    font-size: 14px;
 }
 
 .light{
@@ -9,7 +48,17 @@ body {
     padding: 10px;
     border: 2px white;
     margin: auto;
-    box-shadow: 0 0 5px rgba(255,255,255, 1);
+    box-shadow: inset 0 0 10px #000000;
+    background: rgba(127, 127, 127, 0.5);
+    background-image: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+}
+
+
+#lights {
+    position: absolute;
+    right: 20%;
+    top: 50px;
 }
 
 .container{
@@ -57,10 +106,40 @@ body {
     background-color: red;
 }
 
+#red:hover {
+    background: red;
+    opacity: 0.8;
+}
+
+#red:active {
+    background-color: red;
+    opacity: 0.7;
+}
+
 #yellow{
     background-color: yellow;
 }
 
+#yellow:hover {
+    background: yellow;
+    opacity: 0.9;
+}
+
+#yellow:active {
+    background: yellow;
+    opacity: 0.7;
+}
+
 #green{
     background-color: #00e617;
+}
+
+#green:hover {
+    background: #00e617;
+    opacity: 0.8;
+}
+
+#green:active {
+    background: green;
+    opacity: 0.8;
 }
