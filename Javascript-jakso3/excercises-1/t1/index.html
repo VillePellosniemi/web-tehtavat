@@ -10,13 +10,20 @@
     <input type="text" id="weight" name="firstname"><br>
     Weight:<br>
     <input type="text" id="height" name="lastname"><br>
-    <button id="nappi">Calculate</button>
+    <button type="button" id="nappi">Calculate</button>
 </form>
 <script>
 
   'use strict';
-  const weight = document.getElementById('weight').value;
-  const height = document.getElementById('height').value;
+
+  const nappi = document.querySelector('#nappi');
+  nappi.addEventListener("click", Haku);
+
+  function Haku () {
+    const weight = document.getElementById('weight').value;
+    const height = document.getElementById('height').value;
+    console.log('Your BMI is: ', (weight%height%height));
+  }
 
 </script>
 </body>
