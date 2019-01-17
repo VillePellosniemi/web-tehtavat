@@ -10,17 +10,24 @@
 
   'use strict';
 
-  const b = prompt('Numerator:');
-  const a = prompt('Denominator:');
+  let x = prompt('Numerator:');
+  let y = prompt('Denominator:');
 
-  const gcd = function() {
+  const gcd = function(a, b) {
     if ( ! b) {
       return a;
     }
+
     return gcd(b, a % b);
   };
 
-</script>
+  const c = gcd(x,y);
 
+  document.write('Your number was: ', x,'/',y);
+  const sievennetty1 = x/c;
+  const sievennetty2 = y/c;
+  document.write(' Sievennetty: ', sievennetty1,'/',sievennetty2);
+
+</script>
 </body>
 </html>
