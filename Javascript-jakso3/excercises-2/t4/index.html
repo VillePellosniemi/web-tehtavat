@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+
+  const lottoNumbers = [];
+  const allNumbers = [];
+  const yourNumbers = [];
+
+  for (let i = 1; i <= 40; i++) {
+    allNumbers.push(i);
+  }
+
+  function drawLottoNumbers (low, high) {
+    for (let i=0; i <7; i++) {
+      let number = allNumbers[Math.floor(Math.random() * allNumbers.length)];
+      if (!lottoNumbers.includes(number)) {
+        lottoNumbers.push(number);
+      } else {
+        i--;
+      }
+    }
+  }
+
+  function drawYourNumbers (low, high) {
+    for (let i=0; i <7; i++) {
+      let number = allNumbers[Math.floor(Math.random() * allNumbers.length)];
+      if (!yourNumbers.includes(number)) {
+        yourNumbers.push(number);
+      } else {
+        i--;
+      }
+    }
+  }
+
+  drawLottoNumbers();
+  drawYourNumbers();
+  lottoNumbers.sort((a, b) => a - b);
+  yourNumbers.sort((a, b) => a - b);
+
+  console.log(lottoNumbers);
+  console.log(yourNumbers);
+
+  function valueIsIn (a,v) {
+    for (let i=0; i<7; i++) {
+      if (lottoNumbers.some(v => yourNumbers.includes(v))) {
+        console.log('Oikein');
+      } else {
+        console.log('Väärin');
+      }
+    }
+  }
+
+  valueIsIn();
+
+</script>
+</body>
+</html>
