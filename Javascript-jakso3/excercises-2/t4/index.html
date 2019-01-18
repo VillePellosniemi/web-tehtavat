@@ -17,7 +17,7 @@
     allNumbers.push(i);
   }
 
-  function drawLottoNumbers (low, high) {
+  function drawLottoNumbers () {
     for (let i=0; i <7; i++) {
       let number = allNumbers[Math.floor(Math.random() * allNumbers.length)];
       if (!lottoNumbers.includes(number)) {
@@ -28,7 +28,7 @@
     }
   }
 
-  function drawYourNumbers (low, high) {
+  function drawYourNumbers () {
     for (let i=0; i <7; i++) {
       let number = allNumbers[Math.floor(Math.random() * allNumbers.length)];
       if (!yourNumbers.includes(number)) {
@@ -44,20 +44,22 @@
   lottoNumbers.sort((a, b) => a - b);
   yourNumbers.sort((a, b) => a - b);
 
-  console.log(lottoNumbers);
-  console.log(yourNumbers);
+  console.log('The lottery numbers are: ',lottoNumbers);
+  console.log('Your numbers are: ',yourNumbers);
 
-  function valueIsIn (a,v) {
-    for (let i=0; i<7; i++) {
-      if (lottoNumbers.some(v => yourNumbers.includes(v))) {
-        console.log('Oikein');
-      } else {
-        console.log('Väärin');
-      }
-    }
+  function Compare(){
+
+    const objMap=[];
+
+    lottoNumbers.forEach((e1)=>yourNumbers.forEach((e2)=> {if(e1 === e2){
+          objMap[e1]=objMap[e1]+1||1 ;
+        }
+        }
+    ));
+    console.log('Matching numbers: ',Object.keys(objMap).map(e=>Number(e)));
   }
 
-  valueIsIn();
+  Compare();
 
 </script>
 </body>
