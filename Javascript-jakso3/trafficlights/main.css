@@ -43,8 +43,8 @@ html {
 
 .light{
     border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     padding: 10px;
     border: 2px white;
     margin: auto;
@@ -61,10 +61,11 @@ html {
     top: 50px;
 }
 
+
 .container{
     background: black;
-    width: 132px;
-    height: 380px;
+    width: 66px;
+    height: 230px;
     margin: auto;
     padding: 15px;
     border-radius: 25px;
@@ -75,9 +76,9 @@ html {
 .container:after{
     background: black;
     content: "";
-    width: 50px;
-    height: 800px;
-    margin-left: 41px;
+    width: 35px;
+    height: 500px;
+    margin-left: 18px;
     position: absolute;
     top: 150px;
     z-index: -1;
@@ -117,7 +118,7 @@ html {
 }
 
 #yellow{
-    background-color: yellow;
+    background-color: black;
 }
 
 #yellow:hover {

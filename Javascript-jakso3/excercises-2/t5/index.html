@@ -1,10 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>JavaScript-kokeilu</title>
 </head>
 <body>
+<script>
 
+  'use strict';
+
+  const lottoNumbers = [];
+  const allNumbers = [];
+  const yourNumbers = [];
+
+  for (let i=1; i<=7; i++) {
+    const userNumber = prompt('Choose a lottery number between 1-40');
+    const toInt = parseInt(userNumber);
+    yourNumbers.push(toInt);
+  }
+
+  for (let i = 1; i <= 40; i++) {
+    allNumbers.push(i);
+  }
+
+  function drawLottoNumbers () {
+    for (let i=0; i <7; i++) {
+      let number = allNumbers[Math.floor(Math.random() * allNumbers.length)];
+      if (!lottoNumbers.includes(number)) {
+        lottoNumbers.push(number);
+      } else {
+        i--;
+      }
+    }
+  }
+
+  
+  function valuesInRange (a, low, high) {
+    low = 1;
+    high = 40;
+    return a <= high && a >= low;
+  }
+
+  function valuesUnique () {
+    return (new Set(yourNumbers)).size === yourNumbers.length;
+  }
+
+  console.log(yourNumbers.every(valuesInRange));
+  console.log(valuesUnique());
+  console.log('Correct numbers: ',lottoNumbers);
+  console.log('Your numbers: ', yourNumbers);
+
+
+  function numbersLegal () {
+    if (valuesUnique() || yourNumbers.every(valuesInRange) === false) {
+      console.log('Invalid numbers!');
+    } else {
+      drawLottoNumbers();
+    }
+  }
+
+  numbersLegal();
+
+</script>
 </body>
 </html>
