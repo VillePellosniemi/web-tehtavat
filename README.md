@@ -1,1 +1,1 @@
-# web-tehtavat hello
+# Web-harjoitustehtäviä ja projekteja
