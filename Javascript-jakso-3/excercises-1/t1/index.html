@@ -17,16 +17,16 @@
   'use strict';
 
   const nappi = document.querySelector('#nappi');
-  nappi.addEventListener("click", Haku);
+  nappi.addEventListener("click", Haku); //odota kunnes nappia painetaan, suorita sitten Haku-funktio
 
   function Haku () {
-    let weight = document.getElementById('weight').value;
+    let weight = document.getElementById('weight').value; //hakee käyttäjän syöttämät arvot
     let height = document.getElementById('height').value/100;
-    let BMI = (weight/height/height);
+    let BMI = (weight/height/height); //laske BMI
     if (weight && height > 0) {
-      document.write('Your BMI is: ', BMI);
+      console.log('Your BMI is: ', BMI.toFixed(1));
     } else {
-      document.write('Undefined');
+      console.log('Undefined');
     }
   }
 

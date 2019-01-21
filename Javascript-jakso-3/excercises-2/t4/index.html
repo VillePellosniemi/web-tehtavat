@@ -9,14 +9,17 @@
 
   'use strict';
 
+  //tehdään tyhjät listat
   const lottoNumbers = [];
   const allNumbers = [];
   const yourNumbers = [];
 
+  //lisätään kaikki mahdolliset luvut väliltä 1-40 listaan
   for (let i = 1; i <= 40; i++) {
     allNumbers.push(i);
   }
 
+  //arvotaan 7 numeroa väliltä 1-40
   function drawLottoNumbers () {
     for (let i=0; i <7; i++) {
       let number = allNumbers[Math.floor(Math.random() * allNumbers.length)];
@@ -28,6 +31,7 @@
     }
   }
 
+  //arpoo käyttäjän luvut
   function drawYourNumbers () {
     for (let i=0; i <7; i++) {
       let number = allNumbers[Math.floor(Math.random() * allNumbers.length)];
@@ -41,12 +45,15 @@
 
   drawLottoNumbers();
   drawYourNumbers();
+  //järjestää luvut suurimmasta pienimpään
   lottoNumbers.sort((a, b) => a - b);
   yourNumbers.sort((a, b) => a - b);
 
+  //tulostus
   console.log('The lottery numbers are: ',lottoNumbers);
   console.log('Your numbers are: ',yourNumbers);
 
+  //katsoo mitkä numerot täsmäsivät
   function Compare(){
 
     const objMap=[];

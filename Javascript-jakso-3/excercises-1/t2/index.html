@@ -13,7 +13,7 @@
   let x = prompt('Numerator:');
   let y = prompt('Denominator:');
 
-  const gcd = function(a, b) {
+  const gcd = function(a, b) { //hae suurin yhteinen tekijä
     if ( ! b) {
       return a;
     }
@@ -21,8 +21,9 @@
     return gcd(b, a % b);
   };
 
-  const c = gcd(x,y);
+  const c = gcd(x,y); //uusi muuttuja suurimalle yhteiselle tekijälle
 
+  //tulostus
   document.write('Your number was: ', x,'/',y);
   const sievennetty1 = x/c;
   const sievennetty2 = y/c;

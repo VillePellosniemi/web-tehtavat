@@ -70,7 +70,7 @@ audio:not([controls]) {
 }
 
 /**
- * Address `[hidden]` styling not present in IE 8/9/10.
+ * Address `[hidden]` CSS_styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
 
@@ -103,7 +103,7 @@ a:hover {
    ========================================================================== */
 
 /**
- * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ * Address CSS_styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 
 abbr[title] {
@@ -120,7 +120,7 @@ strong {
 }
 
 /**
- * Address styling not present in Safari and Chrome.
+ * Address CSS_styling not present in Safari and Chrome.
  */
 
 dfn {
@@ -138,7 +138,7 @@ h1 {
 }
 
 /**
- * Address styling not present in IE 8/9.
+ * Address CSS_styling not present in IE 8/9.
  */
 
 mark {
@@ -239,7 +239,7 @@ samp {
 
 /**
  * Known limitation: by default, Chrome and Safari on OS X allow very limited
- * styling of `select`, unless js7 `border` property is set.
+ * CSS_styling of `select`, unless js7 `border` property is set.
  */
 
 /**

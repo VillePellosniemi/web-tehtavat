@@ -9,20 +9,24 @@
 
   'use strict';
 
+  //tehdään tyhjät listat
   const lottoNumbers = [];
   const allNumbers = [];
   const yourNumbers = [];
 
+  //antaa käyttäjän valita luvut promptilla
   for (let i=1; i<=7; i++) {
     const userNumber = prompt('Choose a lottery number between 1-40');
     const toInt = parseInt(userNumber);
     yourNumbers.push(toInt);
   }
 
+  //lisää kaikki mahdollliset luvut listaan
   for (let i = 1; i <= 40; i++) {
     allNumbers.push(i);
   }
 
+  //arpoo oikeat numerot
   function drawLottoNumbers () {
     for (let i=0; i <7; i++) {
       let number = allNumbers[Math.floor(Math.random() * allNumbers.length)];
@@ -35,16 +39,18 @@
   }
 
   drawLottoNumbers();
+  //järjestää pienimmästä suurimpaan
   yourNumbers.sort();
   lottoNumbers.sort();
 
-  
+  //tarkistaa onko käyttäjän syöttämä luku välillä 1-40
   function valuesInRange (a, low, high) {
     low = 1;
     high = 40;
     return a <= high && a >= low;
   }
 
+  //tarkistaa onko listassa kahta tai useampaa samaa lukua
   function valuesUnique () {
     return (new Set(yourNumbers)).size === yourNumbers.length;
   }
@@ -52,6 +58,7 @@
 
   console.log('Drawn numbers: ', lottoNumbers);
 
+  //mitkä luvut täsmäsivät
   function Compare(){
 
     const objMap=[];
@@ -64,7 +71,7 @@
     console.log('Matching numbers: ',Object.keys(objMap).map(e=>Number(e)));
   }
 
-
+  //tarkistaa olivatko molemmat tarkistusfunktiot totta
   function numbersLegal () {
     if (valuesUnique() === true && yourNumbers.every(valuesInRange) === true) {
       console.log('Your numbers: ',yourNumbers);

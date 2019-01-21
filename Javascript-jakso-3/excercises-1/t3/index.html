@@ -42,11 +42,12 @@
 
   'use strict';
 
+  //kysy käyttäjältä pienin ja suurin arvo
   const lowN = prompt('Lowest number:');
   const highN = prompt('Highest number:');
 
-  const randomNumber = Math.floor(Math.random() * ((+highN) - (+lowN)) ) + (+lowN);
-  console.log(randomNumber);
+  const randomNumber = Math.floor(Math.random() * ((+highN) - (+lowN)) ) + (+lowN); //arpoo random-arvon kyseiseltä väliltä (int)
+  //loppu tehty esimerkin mukaan
 
   const guesses = document.querySelector('.guesses');
   const lastResult = document.querySelector('.lastResult');
