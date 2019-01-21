@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+  let pituus = prompt('Anna kuhan pituus senttimetreinä (cm):');
+  let mitta = (37-pituus);
+
+  if (pituus<37) {
+    console.log('Kuha on alimittainen! Alimmasta sallitusta pyyntimitasta puuttuu vielä', mitta, 'cm');
+  } else {
+    console.log('Voit pitää kuhan!');
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+  const leiviska = prompt('Syötä massa leivisköinä:');
+  const naula = prompt('Syötä massa nauloina:');
+  const luoti = prompt('Syötä massa luoteina:');
+  const leiviskag = (leiviska * 8512);
+  const naulag = (naula * 425.6);
+  const luotig = (luoti * 13.3);
+  const kilot = Math.floor((leiviskag + naulag + luotig) / 1000);
+  const grammat = ((leiviskag + naulag + luotig) / 1000);
+  const grammat2 = ((grammat-kilot)*1000);
+
+  function grams(grammat2) {
+    return Number.parseFloat(grammat2).toFixed(2);
+  }
+
+  console.log('Massa nykymittojen mukaan:', kilot, 'kilogrammaa ja ', grams(grammat2), 'grammaa.');
+
+</script>
+</body>
+</html>
