@@ -24,7 +24,7 @@
 
 <h1>Number guessing game</h1>
 
-<p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+<p>We have selected a random number. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
 
 <div class="form">
     <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
@@ -46,9 +46,10 @@
   const lowN = prompt('Lowest number:');
   const highN = prompt('Highest number:');
 
-  const randomNumber = Math.floor(Math.random() * ((+highN) - (+lowN)) ) + (+lowN); //arpoo random-arvon kyseiseltä väliltä (int)
-  //loppu tehty esimerkin mukaan
+  //arpoo random-arvon kyseiseltä väliltä (int)
+  const randomNumber = Math.floor(Math.random() * ((+highN) - (+lowN)) ) + (+lowN);
 
+  //loppu tehty esimerkin mukaan
   const guesses = document.querySelector('.guesses');
   const lastResult = document.querySelector('.lastResult');
   const lowOrHi = document.querySelector('.lowOrHi');
