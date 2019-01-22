@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>JavaScript-kokeilu</title>
 </head>
 <body>
+<script>
 
+  'use strict';
+
+  let uniqueArray = [];
+  for (let i=1; i<=50; i++) {
+    let randomNumber = Math.floor(Math.random() * 50 ) + 1;
+    uniqueArray.push(randomNumber);
+    i++;
+  }
+
+  let rand = Math.floor((Math.random() * 100) + 1);
+  let newArray = [];
+
+  function pickn () {
+    for (let i=0; i<=rand; i++) {
+      let rand = uniqueArray[Math.floor(Math.random() * uniqueArray.length)];
+      newArray.push(rand);
+    }
+  }
+
+  pickn();
+  console.log(uniqueArray);
+  console.log(newArray);
+
+</script>
 </body>
 </html>
