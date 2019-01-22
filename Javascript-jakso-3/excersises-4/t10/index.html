@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+
+  function rndIntFromTo (from, to) {
+    let average = [];
+    for (let i=1; i<=50000; i++) {
+      let randomNumber = Math.floor(Math.random() * (to - from + 1) ) + from;
+      average.push(randomNumber);
+      i++;
+    }
+    return average;
+  }
+
+  console.log(rndIntFromTo(1,9));
+
+  let sum = 0;
+  for( let i = 0; i < rndIntFromTo(1,9).length; i++ ){
+    sum += parseInt( rndIntFromTo(1,9)[i], 10 );
+  }
+
+  let avg = sum/rndIntFromTo(1,9).length;
+  console.log('Keskiarvo:', avg.toFixed(4));
+
+
+</script>
+</body>
+</html>

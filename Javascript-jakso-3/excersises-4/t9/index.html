@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+
+  //tekee tyhjät listat
+  const allNumbers = [];
+  const randomNumbers = [];
+
+  //arpoo montako numeroa listaan tulee
+  const random = Math.floor(Math.random() * 40) + 1;
+  for (let i = 1; i <= random; i++) {
+    allNumbers.push(i);
+  }
+
+  //arpoo numerot
+  function drawNumbers () {
+    for (let i=0; i <random; i++) {
+      let number = allNumbers[Math.floor(Math.random() * allNumbers.length)];
+      randomNumbers.push(number);
+      }
+  }
+
+  drawNumbers();
+  randomNumbers.sort();
+  console.log(randomNumbers);
+
+  //pidempi tapa
+  function mode()
+  {
+    if(randomNumbers.length === 0)
+      return null;
+    let modeMap = {};
+    let maxEl = randomNumbers[0], maxCount = 1;
+    for(let i = 0; i < randomNumbers.length; i++)
+    {
+      let el = randomNumbers[i];
+      if(modeMap[el] == null)
+        modeMap[el] = 1;
+      else
+        modeMap[el]++;
+      if(modeMap[el] > maxCount)
+      {
+        maxEl = el;
+        maxCount = modeMap[el];
+      }
+    }
+    return maxEl;
+  }
+
+  mode();
+  console.log('Moodi on:', mode(randomNumbers));
+
+  //lyhyempi tapa
+  function mode2(arr){
+    return arr.sort((a,b) =>
+        arr.filter(v => v===a).length
+        - arr.filter(v => v===b).length
+    ).pop();
+  }
+
+  console.log('Moodi on:', mode2(randomNumbers));
+
+</script>
+</body>
+</html>
