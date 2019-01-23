@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+
+  const allNumbers = [];
+  const lottoNumbers = [];
+
+  function intRange (low, high, step) {
+    for (let i = low; i <= high; i++) {
+      allNumbers.push(i);
+    }
+
+    for (let i=0; i <7; i++) {
+      let number = allNumbers[Math.floor(Math.random() * allNumbers.length)];
+      if (!lottoNumbers.includes(number)) {
+        lottoNumbers.push(number);
+      } else {
+        i--;
+      }
+    }
+
+    let index = 0;
+    let myVar = setInterval(function() {
+      console.log(lottoNumbers[index++]);
+      if (index === lottoNumbers.length)
+        clearInterval(myVar);
+
+    }, step);
+  }
+
+  intRange(1, 40, 1000);
+
+</script>
+</body>
+</html>

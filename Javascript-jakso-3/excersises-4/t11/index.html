@@ -10,25 +10,25 @@
   'use strict';
 
   let uniqueArray = [];
-  for (let i=1; i<=50; i++) {
+  for (let n=1; n<=60; n++) {
     let randomNumber = Math.floor(Math.random() * 50 ) + 1;
     uniqueArray.push(randomNumber);
-    i++;
   }
 
   let rand = Math.floor((Math.random() * 100) + 1);
   let newArray = [];
 
-  function pickn () {
+  function pickn (a) {
+    a = uniqueArray;
     for (let i=0; i<=rand; i++) {
-      let rand = uniqueArray[Math.floor(Math.random() * uniqueArray.length)];
+      let rand = a[Math.floor(Math.random() * a.length)];
       newArray.push(rand);
     }
+    return newArray;
   }
 
-  pickn();
   console.log(uniqueArray);
-  console.log(newArray);
+  console.log(pickn(newArray));
 
 </script>
 </body>
