@@ -62,50 +62,85 @@ body {
 
 .flexbox {
     width: 100%;
-    text-align: center;
     box-sizing: border-box;
     min-height: 200px;
-    border: 5px solid white;
+    padding-left: 10px;
 }
 
 .about {
     background-color: whitesmoke;
+    width: 25%;
+    height: 300px;
 }
 
 .trafficlights {
     background-color: red;
+    width: 50%;
 }
 
 .parallax {
   background-color: yellow;
+    width: 25%;
 }
 
 .events {
     background-color: green;
+    width: 40%;
+    height: 500px;
 }
 
 .animation {
     background-color: blue;
+    width: 60%;
 }
 
 .cinemagraph {
     background-color: #ffae00;
+    width: 50%;
 }
 
 .video {
     background-color: darkmagenta;
+    width: 50%;
 }
 
 /*CONTENT*/
 
 /*QUERIES*/
 
-@media screen and (min-width: 500px) {
-    .orange {
-        width: 66.6%;
-    }
-    .green {
+@media screen and (max-width: 1200px) {
+    .about {
         width: 33.3%;
+    }
+    .parallax {
+        width: 33.3%;
+    }
+    .trafficlights {
+        width: 33.3%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .about {
+        width: 50%;
+    }
+    .parallax {
+        width: 50%;
+    }
+    .trafficlights {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .about {
+        width: 100%;
+    }
+    .parallax {
+        width: 100%;
+    }
+    .trafficlights {
+        width: 100%;
     }
 }
 
