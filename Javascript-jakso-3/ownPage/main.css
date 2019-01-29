@@ -103,6 +103,12 @@ body {
     width: 50%;
 }
 
+#balloon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
 /*CONTENT*/
 
 /*QUERIES*/
