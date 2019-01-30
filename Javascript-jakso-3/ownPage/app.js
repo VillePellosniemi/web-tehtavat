@@ -18,4 +18,7 @@ window.addEventListener("keydown", event => {
   }
 });
 
-if (balloon) 
+if (balloon.fontSize >= 100) {
+  balloon.textContent = balloon.textContent.replace('#balloon', "💥");
+  balloon.removeEventListener("keydown", "ArrowUp",);
+}
