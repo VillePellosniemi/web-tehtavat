@@ -10,5 +10,5 @@ function Move (e) {
   let coorCenter = "Coordinates center: (" + centerX + "," + centerY + ")";
   document.getElementById("coordinates").innerHTML = coor;
   document.getElementById("coordinatesCenter").innerHTML = coorCenter;
-  layer.style.transform = 'translateX(' + x/10 + 'px) translateY(' + y/100 + 'px)';
+  layer.style.transform = 'translateX(' + x + 'px) translateY(' + y/100 + 'px)';
 }
