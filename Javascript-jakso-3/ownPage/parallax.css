@@ -21,18 +21,6 @@ html {
     right: 5%;
 }
 
-.center {
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin: auto;
-    width:200px;
-    height:200px;
-    border: 1px solid black;
-}
-
 #coordinates, #coordinatesCenter {
     color: white;
 }
