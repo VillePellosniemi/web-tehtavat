@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
+/*html {
+    background:  url(https://stormandsky.com/gif/14.gif) no-repeat center center fixed;
+    background-size: cover;
+} */
+
+#logo {
+    width: 400px;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+}
+
+#otsikko {
+    font-size: 100px;
+    font-family: 'Lato', sans-serif;
+}
+
+#teksti {
+    font-size: 65px;
+    color: #eea30d;
+    font-family: 'Lato', sans-serif;
+    padding-top: 50px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
