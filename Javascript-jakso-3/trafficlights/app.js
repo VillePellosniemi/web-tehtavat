@@ -32,5 +32,3 @@ green.addEventListener('click', (evt) => {
   greentimes.innerHTML = "Green: "+ Object.values(clickCounter)[2] + " times";
 });
 
-console.log(Object.entries(clickCounter));
-
