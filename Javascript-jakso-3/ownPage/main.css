@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
 .container {
     max-width: 70%;
     margin: auto;
@@ -25,10 +29,11 @@ body {
     padding-left: 20px;
     margin: 0;
     font-size: 50px;
+    color: #DCF0F7;
 }
 
 .topnav {
-    background-color: greenyellow;
+    background-color: #0C2C52;
     overflow: hidden;
     width: 100%;
 }
@@ -41,6 +46,8 @@ body {
     text-decoration: none;
     font-size: 30px;
     vertical-align: middle;
+    font-family: 'Raleway', sans-serif;
+    color: #DCF0F7;
 }
 
 .topnav a:hover {
@@ -56,6 +63,11 @@ body {
     float: left;
 }
 
+#myVideo {
+    width: 100%;
+    margin-bottom: -10px;
+}
+
 /*NAV*/
 
 /*CONTENT*/
@@ -65,52 +77,58 @@ body {
     box-sizing: border-box;
     min-height: 200px;
     padding-left: 10px;
+    border: 2px solid #0C2C52;
 }
 
 .about {
-    background-color: whitesmoke;
-    width: 25%;
+    background-color: #DCF0F7;
+    width: 50%;
     height: 300px;
 }
 
 .trafficlights {
-    background-color: red;
-    width: 50%;
+    background-color: #5E9DC8;
+    width: 25%;
 }
 
 .parallax {
-  background-color: yellow;
+    background-color: #5E9DC8;
     width: 25%;
 }
 
 .events {
-    background-color: green;
+    background-color: #5E9DC8;
     width: 40%;
 }
 
 .animation {
-    background-color: blue;
-    width: 60%;
+    background-color: #5E9DC8;
+    width: 25%;
+    height: 300px;
 }
 
 .cinemagraph {
-    background-color: #ffae00;
-    width: 50%;
-}
-
-.video {
-    background-color: yellow;
-    width: 50%;
+    background-color: #5E9DC8;
+    width: 25%;
 }
 
 .balloon {
-    background-color: red;
+    background-color: #DCF0F7;
+    width: 50%;
 }
 
 #balloon {
     position: relative;
     padding: 0;
     margin: 0;
+    font-size: 30px;
+}
+
+.loop {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 
