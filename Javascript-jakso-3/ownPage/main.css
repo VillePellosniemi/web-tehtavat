@@ -12,6 +12,35 @@ h1 {
     font-family: 'Raleway', sans-serif;
 }
 
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+p {
+    padding: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    margin-top: -10px;
+}
+
+.btn {
+    height: 100px;
+    width: 80%;
+    border-radius: 20px;
+    border: 5px solid #0C2C52;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    color: #0C2C52;
+}
+
+.test {
+    text-align: center;
+    padding: 30px 0;
+}
+
 .container {
     max-width: 70%;
     margin: auto;
@@ -44,7 +73,7 @@ h1 {
     line-height: 90px;
     padding: 0 30px 0 30px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     vertical-align: middle;
     font-family: 'Raleway', sans-serif;
     color: #DCF0F7;
@@ -76,14 +105,13 @@ h1 {
     width: 100%;
     box-sizing: border-box;
     min-height: 200px;
-    padding-left: 10px;
     border: 2px solid #0C2C52;
+    height: 300px;
 }
 
 .about {
     background-color: #DCF0F7;
     width: 50%;
-    height: 300px;
 }
 
 .trafficlights {
@@ -104,7 +132,6 @@ h1 {
 .animation {
     background-color: #5E9DC8;
     width: 25%;
-    height: 300px;
 }
 
 .cinemagraph {
@@ -119,9 +146,11 @@ h1 {
 
 #balloon {
     position: relative;
-    padding: 0;
-    margin: 0;
-    font-size: 30px;
+    font-size: 50px;
+    margin-left: -10px;
+    margin-top: 0px;
+    text-align: center;
+    padding: 20px 0;
 }
 
 .loop {
@@ -137,36 +166,58 @@ h1 {
 /*QUERIES*/
 
 @media screen and (max-width: 1200px) {
+
+    .topnav-right {
+        width: 100%;
+        padding: 0 300px 0 100px;
+        float: left;
+        text-align: center;
+    }
     .about {
-        width: 33.3%;
+        width: 60%;
+    }
+    p {
+        margin-top: -20px;
     }
     .parallax {
-        width: 33.3%;
+        width: 40%;
     }
     .trafficlights {
-        width: 33.3%;
+        width: 33.333%;
     }
-    .events {
+    .animation {
+        width: 33.333%;
+    }
+    .cinemagraph {
+        width: 33.333%;
+    }
+    .balloon {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .about {
+        width: 75%;
+    }
+    .parallax {
+        width:25%;
+    }
+    .trafficlights {
         width: 50%;
     }
     .animation {
         width: 50%;
     }
-}
-
-@media screen and (max-width: 900px){
-    .about {
+    .cinemagraph {
         width: 50%;
     }
-    .parallax {
+    .balloon {
         width: 50%;
-    }
-    .trafficlights {
-        width: 100%;
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
     .about {
         width: 100%;
     }
@@ -174,21 +225,15 @@ h1 {
         width: 100%;
     }
     .trafficlights {
-        width: 100%;
-    }
-    .events {
         width: 100%;
     }
     .animation {
         width: 100%;
     }
     .cinemagraph {
-        background-color: #ffae00;
         width: 100%;
     }
-
-    .video {
-        background-color: darkmagenta;
+    .balloon {
         width: 100%;
     }
 }
