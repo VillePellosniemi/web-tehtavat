@@ -34,6 +34,7 @@ p {
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     color: #0C2C52;
+    background-color: #DCF0F7;
 }
 
 .test {
@@ -42,7 +43,7 @@ p {
 }
 
 .container {
-    max-width: 70%;
+    width: 70%;
     margin: auto;
     background: white;
     display: flex;
@@ -94,7 +95,7 @@ p {
 
 #myVideo {
     width: 100%;
-    margin-bottom: -10px;
+    margin-bottom: -5px;
 }
 
 /*NAV*/
@@ -167,12 +168,6 @@ p {
 
 @media screen and (max-width: 1200px) {
 
-    .topnav-right {
-        width: 100%;
-        padding: 0 300px 0 100px;
-        float: left;
-        text-align: center;
-    }
     .about {
         width: 60%;
     }
@@ -215,9 +210,12 @@ p {
     .balloon {
         width: 50%;
     }
+    .container {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 600px){
     .about {
         width: 100%;
     }
